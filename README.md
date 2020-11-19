@@ -29,6 +29,10 @@ E aqui eu posso colocar qualquer coisa. Eu posso colocar para rodar mil graus, e
 
 Existem outras transformações possíveis e vale muito a pena você explorar, porque facilita muito a criação e a mudança de itens quando ele já está carregado na página via CSS. Agora que vimos as transformações, vamos seguir a nossa página e terminar o conteúdo usando tabelas.
 
+Estilos na tabela
+
+Para isso usamos a vírgula e marcamos a tag. Se quiser vamos deixar isso um pouco mais específico, podemos colocar uma classe na tabela e só fazer nas células do cabeçalho do conteúdo daquela tabela específica. Mas já que botamos a vírgula, todos os itens então devem ficar com essa borda preta marcando esse conteúdo.
+
 Melhorando a semântica do HTML5
 
 Quando eu poderia usar esse aqui além do que eu já estou usando? Quando, por exemplo, eu tenho o preenchimento dos dados de um cartão de crédito. Todos os dados referentes àquele cartão podem estar dentro de um fieldset. Ou os dados de um endereço. E dentro de um fieldset não temos parágrafos, nós temos o título, e o título de um fildset é chamado de legend.
