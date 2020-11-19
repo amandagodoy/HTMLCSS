@@ -1,5 +1,8 @@
 # html-css-primeirapaginadaweb
 
+
+Exemplificando o nível de importância de algumas propriedades no CSS3 com autoria de Pedro Marins (https://www.linkedin.com/in/pedromarins/)
+
 inline = 1000 vlr
 id = 100 vlr
 class = 10 vlr
