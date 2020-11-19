@@ -37,6 +37,7 @@ Melhorando a semântica do HTML5
 
 Quando eu poderia usar esse aqui além do que eu já estou usando? Quando, por exemplo, eu tenho o preenchimento dos dados de um cartão de crédito. Todos os dados referentes àquele cartão podem estar dentro de um fieldset. Ou os dados de um endereço. E dentro de um fieldset não temos parágrafos, nós temos o título, e o título de um fildset é chamado de legend.
 
+Refazendo a página inicial
 
 Em nosso site, temos uma descrição com o título "Sobre a Barbearia Alura". Trata-de se informações que são fechadas em si mesmas, como uma sessão. Em nosso código esse conteúdo está sendo envolvido por uma <div>, mas para casos assim utilizamos a tag <section>.
   
@@ -50,7 +51,7 @@ Em nosso site, temos uma descrição com o título "Sobre a Barbearia Alura". Tr
                 <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
 </section>
 
-A diferença entre <div> e <section> é que no primeiro caso, trata-se apenas de uma divisão visual. Já no caso da <sectiom> teremos uma divisão por conteúdo complexo, semanticamente homogêneo.
+A diferença entre <div> e <section> é que no primeiro caso, trata-se apenas de uma divisão visual. Já no caso da <section> teremos uma divisão por conteúdo complexo, semanticamente homogêneo.
 
 Na parte de benefícios, também possuímos conteúdos fechados em si, neste caso também substituiremos a <div> por <section>.
   
