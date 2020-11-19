@@ -36,3 +36,38 @@ Para isso usamos a vírgula e marcamos a tag. Se quiser vamos deixar isso um pou
 Melhorando a semântica do HTML5
 
 Quando eu poderia usar esse aqui além do que eu já estou usando? Quando, por exemplo, eu tenho o preenchimento dos dados de um cartão de crédito. Todos os dados referentes àquele cartão podem estar dentro de um fieldset. Ou os dados de um endereço. E dentro de um fieldset não temos parágrafos, nós temos o título, e o título de um fildset é chamado de legend.
+
+
+Em nosso site, temos uma descrição com o título "Sobre a Barbearia Alura". Trata-de se informações que são fechadas em si mesmas, como uma sessão. Em nosso código esse conteúdo está sendo envolvido por uma <div>, mas para casos assim utilizamos a tag <section>.
+  
+<section class="principal">
+                <h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
+
+                <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+                <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+                <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+</section>
+
+A diferença entre <div> e <section> é que no primeiro caso, trata-se apenas de uma divisão visual. Já no caso da <sectiom> teremos uma divisão por conteúdo complexo, semanticamente homogêneo.
+
+Na parte de benefícios, também possuímos conteúdos fechados em si, neste caso também substituiremos a <div> por <section>.
+  
+<section class="beneficios">
+                <h3 class="titulo-centralizado">Benefícios</h3>
+
+                <ul>
+                    <li class="itens">Atendimento aos Clientes</li>
+                    <li class="itens">Espaço diferenciado</li>
+                    <li class="itens">Localização</li>
+                    <li class="itens">Profissionais Qualificados</li>
+                </ul>
+
+                <img src="beneficios.jpg" class="imagembeneficios">
+            </section>
+          
+Ao retornarmos para o navegador, perceberemos as sessões centralizadas, mas ainda resta fazermos ajustes nas imagens, lista de benefícios assim por diante. Faremos esse processo passo a passo, elemento por elemento, de forma que possamos revisar conteúdos que já conhecemos, assim como evoluirmos o projeto.
+
+Teremos que em alguns pontos reescrever o que já foi feito, pois isso é rotineiro para quem trabalha com desenvolvimento, afinal sempre há implementações novas e atualizações. Sempre será necessário melhorar nossos conteúdos, refatorar códigos, realizar manutenções e reparos.
+
