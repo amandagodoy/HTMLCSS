@@ -225,7 +225,7 @@ Ao recarregarmos a página, teremos uma sombra projetada, quadrada.
 
 sombra
 
-
+(referencia de imagem está no 5_2_1_sombra.png)
 
 Podemos melhorar a qualidade estética dessa sombra ao adicionarmos uma terceira propriedade chamada blur, em que podemos aplicar um nível de desfoque específico, no caso, inseriremos um valor de 5px. Quanto maior a quantidade de pixels que inserirmos, mais claro sera o efeito de desfoque.
 
@@ -240,6 +240,8 @@ Ao recarregarmos a página, veremos o efeito aplicado na sombra da imagem.
 
 blur
 
+(referencia de imagem está no 5_2_2_blur.png)
+
 Temos ainda uma quarta propriedade que configura a intensidade da borda a partir do tamanho do elemento, isto é, o tamanho da sombra projetada. Neste caso, inseriremos 20px:
 
 .imagem-beneficios {
@@ -253,6 +255,8 @@ Temos ainda uma quarta propriedade que configura a intensidade da borda a partir
 No navegador, a sombra sugirá expandida.
 
 sombragrande
+
+(referencia de imagem está no 5_2_3_sombragrande.png)
 
 Podemos adicionar várias sombras em um mesmo elemento, basta que o conteúdo esteja separado por uma vírgula. Essa nova sombra terá valores negativos e terá a cor amarela.
 
@@ -280,6 +284,8 @@ Ao recarregarmos a página teremos três sombras.
 
 sombras
 
+(referencia de imagem está no 5_2_5_sombra.png)
+
 Outra possibilidade no CSS 3 é criar sombras internas. Utilizaremos a própria sessão de benefícios para exempliciar esse efeito, que será utilizado em box-shadowe se chama inset. Seu posicionamento será a partir do centro do elemento e terá a cor vermelha.
 
 .beneficios {
@@ -299,6 +305,8 @@ Ao carregarmos a página, não notaremos qualquer mudança. Isso se deve pelo fa
 Feito isso, a sombra será interna em toda a sessão de benefícios.
 
 sombra
+
+(referencia de imagem está no 5_2_5_sombras.png)
 
 Apagaremos todas as sombras coloridas e manteremos apenas a sombra leve em imagem-beneficios.
 
@@ -322,3 +330,5 @@ Para fechar o tópico de sombras, por último aprenderemos a inserir sombras em 
 Será criada uma sombra para o título.
 
 texto vermelho
+
+(referencia de imagem está no 5_2_6_texto+vermelho.png)
