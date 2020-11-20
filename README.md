@@ -156,3 +156,169 @@ Dessa forma, foi calculado precisamente 350px de largura para este elemento. É 
 }
 
 A propriedade calc nos dá o poder de fazer com o que calculemos valores proporcionais específicos.
+
+Opacidade nos elementos
+
+Como gerar opacidade em nossos elementos? A opacidade é uma camada a mais posta sobre a imagem, como um insulfilme para a janela de carro, que oferece níveis diferentes de proteção contra o Sol.
+
+Utilizaremos a imagem da sessão "Benefícios" para compreendermos o funcionamento da ferramenta de opacidade no HTML. Em index.css , utilizaremos a propriedade opacity que pode ter valores entre 0 a 1, sendo que 0 o elemento estará totalmente oculto. Se quisermos exibir a imagem com opacidade de 30%, ajustaremos o valor da propriedade para 0.3.
+
+.imagem-beneficios {
+    width: 60%
+    opacity: 0.3;
+}
+
+Esse recurso é interessante quando montamos composições visuais com elementos sobrepostos, ou para sugerir interações com o mouse ao utilizarmos o hover. Quando o mouse estiver posicionado sobre a imagem teremos 1 de opacidade.
+
+.imagem-beneficios:hover {
+    opacity: 1;
+}
+
+Temos ainda o recurso transition, em que podemos estabelecer uma transição da opacidade em determinados milissegundos.
+
+.imagem-beneficios {
+    width: 60%
+    opacity: 0.3;
+    transition: 400ms;
+}
+
+Em nosso site, faremos com o que o comportamento padrão da imagem seja de opacidade 1, e no momento em que mouse estiver sobre ela a opacidade será de 0.3, o que irá gerar um belo efeito visual.
+
+Atualmente, podemos utilizar opacidade em todos os elementos e em cores, vamos entender melhor como isso ocorre.
+
+A cor de titulo-principal possui a cor padrão #00000, preto. Como podemos fazer com que essa cor que está em hexadecimal? se torne RGB? Isto é, a mesma cor escrita em outra linguagem? Do seguinte modo:
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    color: rgb(0,0,0);
+}
+
+Com CSS 3, podemos utilizar mais uma camada - a de opacidade, chamada alfa - nas cores em RGB. Para tanto, utilizamos o rgbae então definir os valores que quisermos.
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    color: rgb(0,0,0,0.3);
+}
+
+Esse recurso pode ser utilizado em todas as cores: de fundo, texto, borda e assim por diante.
+
+Sombra nos elementos
+
+as sombras, uma outra novidade que CCS 3 inseriu. Fazer sombras em elementos sempre foi muito difícil nas versões anteriores, hoje em dia, trata-se de algo trivial.
+
+Continuaremos a usar a imagem da sessão de "Benefícios". A sombra é resultado de um efeito de "luz" que lançaremos sobre o elemento. O nome da propriedade que utilizaremos para gerar esse efeito é box-shadow, que possui a propriedade do eixo X, T e uma cor. Queremos deslocar 10px no eixo X e Y, a cor que utilizaremos será preto.
+
+.imagem-beneficios {
+    width: 60%
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px #000000;
+}
+
+Ao recarregarmos a página, teremos uma sombra projetada, quadrada.
+
+sombra
+
+
+
+Podemos melhorar a qualidade estética dessa sombra ao adicionarmos uma terceira propriedade chamada blur, em que podemos aplicar um nível de desfoque específico, no caso, inseriremos um valor de 5px. Quanto maior a quantidade de pixels que inserirmos, mais claro sera o efeito de desfoque.
+
+.imagem-beneficios {
+    width: 60%
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 5px #000000;
+}
+
+Ao recarregarmos a página, veremos o efeito aplicado na sombra da imagem.
+
+blur
+
+Temos ainda uma quarta propriedade que configura a intensidade da borda a partir do tamanho do elemento, isto é, o tamanho da sombra projetada. Neste caso, inseriremos 20px:
+
+.imagem-beneficios {
+    width: 60%
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 5px 20px #000000;
+
+}
+
+No navegador, a sombra sugirá expandida.
+
+sombragrande
+
+Podemos adicionar várias sombras em um mesmo elemento, basta que o conteúdo esteja separado por uma vírgula. Essa nova sombra terá valores negativos e terá a cor amarela.
+
+.imagem-beneficios {
+    width: 60%
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 5px 20px #00000, -10px -10px yellow;
+
+}
+
+Será projetada uma sombra por debaixo da anterior.
+
+Podemos, ainda, inserir uma terceira sombra com a cor rgba() com a camada de opacidade e borda vermelha.
+
+.imagem-beneficios {
+    width: 60%
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 5px 20px #00000, -10px -10px yellow, -20px 20px rgba(255,0,0,0.5);
+
+}
+
+Ao recarregarmos a página teremos três sombras.
+
+sombras
+
+Outra possibilidade no CSS 3 é criar sombras internas. Utilizaremos a própria sessão de benefícios para exempliciar esse efeito, que será utilizado em box-shadowe se chama inset. Seu posicionamento será a partir do centro do elemento e terá a cor vermelha.
+
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+    box-shadow: inset 0 0 #FF0000;
+}
+
+Ao carregarmos a página, não notaremos qualquer mudança. Isso se deve pelo fato de que a sombra possui o mesmo tamanho do elemento. Para que ela se torne perceptível, criaremos um espaçamento de 30px.
+
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+    box-shadow: inset 0 0 30px #FF0000;
+}
+
+Feito isso, a sombra será interna em toda a sessão de benefícios.
+
+sombra
+
+Apagaremos todas as sombras coloridas e manteremos apenas a sombra leve em imagem-beneficios.
+
+.imagem-beneficios {
+    width: 60%
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+}
+
+Para fechar o tópico de sombras, por último aprenderemos a inserir sombras em textos. Em titulo-principal, utilizaremos a propriedade text-shadow, que recebem os valores que já conhecemos.
+
+.titulo-principal {
+    text-align: center;
+    font-size: em;
+    margin: 0 0 1em;
+    clear: left;
+    text-shadow: 2px 2px #FF0000; 
+}
+
+Será criada uma sombra para o título.
+
+texto vermelho
